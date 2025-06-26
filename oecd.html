@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OECD Teaching Compass: 교사 재교육 프로그램</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* 추가적인 커스텀 스타일 */
+        body {
+            font-family: 'Pretendard', sans-serif; /* 시스템 폰트 대체 */
+        }
+        .accordion-content {
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .accordion-content.open {
+            max-height: 2000px; /* 충분한 높이 */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <i class="fas fa-compass text-5xl text-blue-600 mb-4"></i>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900">OECD Teaching Compass</h1>
+            <p class="text-lg md:text-xl mt-2 text-slate-600">교사, 교육과정 변화의 주체로 다시 서다</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <!-- Introduction Section -->
+        <section class="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-700">Teaching Compass란 무엇인가?</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-lg leading-relaxed text-slate-700 space-y-4">
+                    <p>OECD Teaching Compass는 가르친다는 것과 교사가 된다는 것의 의미에 대한 미래 지향적이고 총체적인 비전을 제시합니다. 이는 교사를 단순한 지식 전달자가 아닌, 교육의 미래를 만들어가는 '변화의 주체'로 재정의합니다.</p>
+                    <p>학생들의 주체성, 역량, 웰빙을 강조하는 'OECD Learning Compass 2030'의 비전을 실현하기 위해, Teaching Compass는 교사들을 지원하고 역량을 강화하는 구체적인 방향을 제시합니다. 교사가 성장할 때, 학생도 성장할 수 있습니다.</p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://i.imgur.com/Gj9Q4C5.png" alt="OECD Learning Compass 2030" class="rounded-lg shadow-md max-w-sm w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Concepts Section (Accordion) -->
+        <section class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Teaching Compass의 6가지 핵심 개념</h2>
+            <div class="space-y-4" id="accordion-container">
+
+                <!-- 1. Making the future we want a reality -->
+                <div class="border border-slate-200 rounded-lg">
+                    <button class="accordion-toggle w-full text-left p-5 flex justify-between items-center font-semibold text-xl text-slate-800 bg-slate-100 hover:bg-slate-200 transition-colors duration-300 rounded-t-lg">
+                        <span><i class="fas fa-rocket mr-3 text-blue-600"></i> 우리가 원하는 미래 만들기</span>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 bg-white rounded-b-lg">
+                        <p class="mb-4">교육의 비전과 목적을 명확히 하여, 우리가 원하는 미래를 학생과 교사 모두를 위한 현실로 만드는 것을 목표로 합니다.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>공유된 비전과 목적:</strong> 교육을 미래에 대한 공동의 열망과 일치시킵니다.</li>
+                            <li><strong>과거로부터의 학습:</strong> 과거의 성공과 실패에서 교훈을 얻어 현재에 적용합니다.</li>
+                            <li><strong>전체 시스템적 접근:</strong> 단편적 해결이 아닌, 교육, 생태, 경제, 문화를 연결하는 통합적 사고를 강조합니다.</li>
+                        </ul>
+                        <div class="mt-4 flex justify-center">
+                             <img src="https://i.imgur.com/Q28UjX1.png" alt="Well-being 2040" class="rounded-md shadow-sm max-w-xs w-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Anchoring the Compass -->
+                <div class="border border-slate-200 rounded-lg">
+                    <button class="accordion-toggle w-full text-left p-5 flex justify-between items-center font-semibold text-xl text-slate-800 bg-slate-100 hover:bg-slate-200 transition-colors duration-300">
+                        <span><i class="fas fa-anchor mr-3 text-blue-600"></i> 강력한 자기 개념으로 변화 탐색하기</span>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 bg-white rounded-b-lg">
+                        <p class="mb-4">급변하는 환경 속에서 교사가 길을 잃지 않도록 돕는 내면의 닻, 즉 강력한 전문가적 자기 개념을 구축합니다. 이 닻은 <strong>존재(Being), 소속(Belonging), 되어감(Becoming)</strong>으로 구성됩니다.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>존재(Being):</strong> 진정성, 존엄성, 성실성을 바탕으로 한 전문가적 정체성.</li>
+                            <li><strong>소속(Belonging):</strong> 심리적 안정감과 신뢰에 기반한 동료, 학생, 공동체와의 관계.</li>
+                            <li><strong>되어감(Becoming):</strong> 지속적인 전문 학습(CPL)과 성찰을 통한 끊임없는 성장.</li>
+                        </ul>
+                         <div class="mt-4 flex justify-center">
+                             <img src="https://i.imgur.com/vHq4H0a.png" alt="Inner Anchor" class="rounded-full shadow-sm w-48 h-48">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Teacher Agency -->
+                <div class="border border-slate-200 rounded-lg">
+                    <button class="accordion-toggle w-full text-left p-5 flex justify-between items-center font-semibold text-xl text-slate-800 bg-slate-100 hover:bg-slate-200 transition-colors duration-300">
+                        <span><i class="fas fa-hand-fist mr-3 text-blue-600"></i> 교육과정 변화를 이끄는 교사 주체성</span>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 bg-white rounded-b-lg">
+                        <p class="mb-4">교사가 자신의 의도적인 행동과 결정이 교육 환경에 긍정적인 영향을 미칠 수 있다는 믿음을 갖고, 변화를 주도하는 힘을 의미합니다.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>개인 주체성(Individual Agency):</strong> 자기 효능감, 목표 지향성, 의사결정 능력을 통해 발현됩니다.</li>
+                            <li><strong>공동 주체성(Co-agency):</strong> 학생, 동료, 학부모, 심지어 AI와의 상호작용을 통해 증폭됩니다.</li>
+                            <li><strong>집단 주체성(Collective Agency):</strong> 공유된 믿음, 가치, 신뢰를 바탕으로 공동의 목표를 향해 협력하는 힘입니다.</li>
+                        </ul>
+                        <div class="mt-4 flex justify-center">
+                             <img src="https://i.imgur.com/i97N7yG.png" alt="Teacher Agency" class="rounded-md shadow-sm max-w-xs w-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Teacher Competencies -->
+                <div class="border border-slate-200 rounded-lg">
+                    <button class="accordion-toggle w-full text-left p-5 flex justify-between items-center font-semibold text-xl text-slate-800 bg-slate-100 hover:bg-slate-200 transition-colors duration-300">
+                        <span><i class="fas fa-puzzle-piece mr-3 text-blue-600"></i> 복잡성 항해를 위한 교사 역량</span>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 bg-white rounded-b-lg">
+                        <p class="mb-4">효과적인 교육과정 실행을 위해 교사가 갖춰야 할 지식, 기술, 태도 및 가치의 통합적 능력을 의미합니다.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>지식(Knowledge):</strong> 학습자, 자기 자신, 세상, 그리고 AI와 같은 새로운 영역에 대한 깊은 이해.</li>
+                            <li><strong>기술(Skills):</strong> 비판적 사고, 문제 해결, 공감, 협업 등 인지적, 사회·정서적, 실용적 기술.</li>
+                            <li><strong>태도 및 가치(Attitudes & Values):</strong> 성장 마인드셋, 회복탄력성, 존엄성, 정의, 연대 등 개인적, 사회적, 보편적 가치.</li>
+                        </ul>
+                         <div class="mt-4 flex justify-center">
+                             <img src="https://i.imgur.com/9nFkU0H.png" alt="Teacher Competencies" class="rounded-full shadow-sm w-48 h-48">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 5. Teacher Well-being -->
+                <div class="border border-slate-200 rounded-lg">
+                    <button class="accordion-toggle w-full text-left p-5 flex justify-between items-center font-semibold text-xl text-slate-800 bg-slate-100 hover:bg-slate-200 transition-colors duration-300">
+                        <span><i class="fas fa-heart-pulse mr-3 text-blue-600"></i> 번영하는 전문가를 위한 교사 웰빙</span>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 bg-white rounded-b-lg">
+                        <p class="mb-4">단순한 규제를 넘어, 교사가 전문가로서 목적의식을 갖고 성장할 수 있도록 지원하는 총체적인 웰빙을 강조합니다.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>신체적 웰빙:</strong> 공정한 근무 조건, 일과 삶의 균형, 안전한 교육 환경.</li>
+                            <li><strong>인지적 웰빙:</strong> 지적 참여, 주인의식, 지속적인 전문적 성장.</li>
+                            <li><strong>사회·정서적 웰빙:</strong> 자기 가치와 인정, 회복탄력성, 공감과 신뢰, 협력.</li>
+                        </ul>
+                        <div class="mt-4 flex justify-center">
+                             <img src="https.i.imgur.com/V7R58kQ.png" alt="Teacher Well-being" class="rounded-full shadow-sm w-48 h-48">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Teachers as integral to a learning ecosystem -->
+                <div class="border border-slate-200 rounded-lg">
+                    <button class="accordion-toggle w-full text-left p-5 flex justify-between items-center font-semibold text-xl text-slate-800 bg-slate-100 hover:bg-slate-200 transition-colors duration-300">
+                        <span><i class="fas fa-network-wired mr-3 text-blue-600"></i> 학습 생태계의 핵심, 교사</span>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-5 bg-white rounded-b-lg">
+                        <p class="mb-4">교사는 고립된 존재가 아니라, 학생, 동료, 학교 리더, 학부모, 지역사회, 정책 입안자 등 다양한 행위자들과 연결된 역동적인 학습 생태계의 핵심 구성원입니다.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>미시/중시 체계(Micro/Meso):</strong> 학생, 동료 교사, 학교 리더, 학부모와의 협력.</li>
+                            <li><strong>외체계(Exo-system):</strong> 지역 교육청, 민간 재단, 학습 표준 및 평가 시스템과의 연계.</li>
+                            <li><strong>거시 체계(Macro-system):</strong> 국가 교육 정책, 사회·문화적 가치, 미디어와의 상호작용.</li>
+                        </ul>
+                         <div class="mt-4 flex justify-center">
+                             <img src="https://i.imgur.com/kS5x8bL.png" alt="Learning Ecosystem" class="rounded-md shadow-sm max-w-xs w-full">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="mt-12 text-center">
+             <h2 class="text-3xl font-bold mb-4 text-slate-800">함께 만들어가는 교육의 미래</h2>
+             <p class="max-w-3xl mx-auto text-lg text-slate-600 mb-6">OECD Teaching Compass는 모든 교사가 교육과정 변화의 주체로서 자부심을 갖고, 복잡한 세상을 항해하며 학생들의 성장을 이끌 수 있도록 지원하는 나침반입니다. 이 비전을 현실로 만들기 위한 여정에 함께해 주세요.</p>
+             <a href="https://www.oecd-ilibrary.org/education/oecd-teaching-compass_a5d89322-en" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <i class="fas fa-file-pdf mr-2"></i> 원문 보고서 보기
+             </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 bg-slate-800 text-white text-center py-6">
+        <p>© 2024 OECD Teaching Compass 학습자료. All Rights Reserved.</p>
+        <p class="text-sm text-slate-400 mt-1">이 자료는 OECD 원문을 기반으로 교육 목적으로 재구성되었습니다.</p>
+    </footer>
+
+    <script>
+        // Accordion JavaScript
+        const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+        accordionToggles.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.fa-chevron-down, .fa-chevron-up');
+
+                // 모든 아코디언 닫기 (선택사항: 하나만 열리게 하려면)
+                // accordionToggles.forEach(otherButton => {
+                //     if (otherButton !== button) {
+                //         otherButton.nextElementSibling.classList.remove('open');
+                //         otherButton.querySelector('.fa-chevron-down, .fa-chevron-up').classList.replace('fa-chevron-up', 'fa-chevron-down');
+                //     }
+                // });
+
+                content.classList.toggle('open');
+                
+                if (content.classList.contains('open')) {
+                    icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                } else {
+                    icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
